@@ -60,6 +60,11 @@ header {
     z-index: 100;
 }
 
+.header-active{
+    background: var(--box-color);
+    transition: 0.4s;
+}
+
 .nav {
     display: flex;
     align-content: center;
@@ -386,5 +391,32 @@ header {
 
 .contact-form .send-btn:hover{
     background: #546eff;
+    transition: 0.3s all linear;
+}
+
+/* Footer styles */
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 1.4rem;
+}
+
+.footer .footer-links{
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+.footer .footer-links a {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--bg-color);
+}
+
+.footer .footer-links a:hover {
+    color: var(--main-color);
     transition: 0.3s all linear;
 }
