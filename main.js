@@ -1,8 +1,15 @@
 let menu = document.querySelector(".menu-icon");
+let nav = document.querySelector(".navbar");
 
 menu.onclick = () => {
+    nav.classList.toggle("open-menu");
     menu.classList.toggle("move");
 };
+
+window.onscroll = () => {
+    nav.classList.remove("open-menu");
+    menu.classList.remove("move");
+}
 
 
 //Email JS
@@ -61,3 +68,7 @@ let scrollTop = document.querySelector('.scroll-top');
 window.addEventListener('scroll', () => {
     scrollTop.classList.toggle('scroll-active', window.scrollY >= 400);
 });
+
+
+
+
