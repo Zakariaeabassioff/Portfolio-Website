@@ -55,6 +55,24 @@ function success(){
     });
 }
 
+//Certifications section
+
+const certifications = document.querySelectorAll('.certification-box');
+
+certifications.forEach((certification) => {
+    const btn = certification.querySelector('.certification-btn');
+    
+    btn.addEventListener('click', function(){
+        certifications.forEach((item) => {
+            if(item != certification){
+                item.classList.remove('show-info');
+            }
+        });
+
+        certification.classList.toggle('show-info');
+    })
+})
+
 //Header background change On Scroll
 
 let header = document.querySelector('header');
@@ -68,6 +86,20 @@ let scrollTop = document.querySelector('.scroll-top');
 window.addEventListener('scroll', () => {
     scrollTop.classList.toggle('scroll-active', window.scrollY >= 400);
 });
+
+//Pop Up
+
+const popup = document.querySelector('.popup');
+window.onload = () => {
+    setTimeout(() => {
+        popup.style.display = 'block';
+    }, 2000)
+}
+
+const close = document.querySelector('.close');
+close.addEventListener('click', () => {
+    popup.style.display = 'none';
+})
 
 
 

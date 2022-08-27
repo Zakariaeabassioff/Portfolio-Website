@@ -9,12 +9,23 @@
     <link rel="stylesheet" href="styles.css">
     <!-- Icons -->
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
 </head>
 <body>
     <!-- Scroll Top -->
     <a href="#home" class="scroll-top">
         <i class='bx bx-up-arrow-alt'></i>
     </a>
+
+    <div class="popup">
+        <div class="contentBox">
+            <i class="fa-solid fa-circle-xmark close"></i>
+            <p>Étant admis en 3ème année (bac+3) à l'Institut de génie informatique et industriel (IG2I) en voie par apprentissage, je suis actuellement à la recherche d'un contract d'apprentissage.<br>
+            N'hésitez pas à visiter mon portfolio !<br>
+            Merci</p>
+        </div>
+    </div>
+    
     <!-- Header -->
     <header>
         <!-- Nav -->
@@ -24,8 +35,9 @@
             <!-- Navbar -->
             <ul class="navbar">
                 <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#about" class="nav-link">A propos</a></li>
                 <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#certification" class="nav-link">Certifications</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
             <!-- Menu Icon -->
@@ -47,13 +59,13 @@
                 <h3>Salut</h3>
                 <h2>Je suis <span class="color">Zakariae</span></h2>
                 <p>
-                    Je suis <span class="color">élève ingénieur</span> en 3ème année génie informatique à l'université internationale de Rabat, qui est très intéressé par <span class="color">le développement web Front end</span>.
+                    Élève ingénieur passionné par le développement web Front end.
                 </p>
                 <!-- Social -->
                 <div class="social">
-                    <a href="#"><i class='bx bxl-github'></i></a>
-                    <a href="#"><i class='bx bxl-linkedin-square'></i></a>
-                    <a href="#"><i class='bx bxl-codepen'></i></a>
+                    <a href="https://github.com/Zakariaeabassioff"><i class='bx bxl-github'></i></a>
+                    <a href="https://www.linkedin.com/in/zakariae-abassi-314154219/"><i class='bx bxl-linkedin-square'></i></a>
+                    <a href="https://codepen.io/Abassioff"><i class='bx bxl-codepen'></i></a>
                 </div>
             </div>
         </div>
@@ -63,21 +75,21 @@
     <section class="about container" id="about">
         <section class="about container" id="about">
             <!-- Header -->
-            <h2 class="heading">About</h2>
+            <h2 class="heading">A propos</h2>
             <!-- About Content -->
             <div class="about-content">
                 <div class="about-data">
-                    <span>About Me</span>
-                    <h2>Élève ingénieur & Développeur Web</h2>
+                    <h2>Élève ingénieur & Développeur Web Front End</h2>
                     <a href="CV.pdf" class="btn">
                         Télécharger le CV
                         <i class='bx bx-download'></i>
                     </a>
                 </div>
                 <div class="about-text">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus.</p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo nesciunt provident laboriosam temporibus ut quo sed numquam! Harum.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    <p>
+                        Je suis <span class="color">élève ingénieur</span> en 3ème année génie informatique à l'université internationale de
+                        Rabat, qui est très intéressé par <span class="color">le développement web Front end</span>.
+                    </p>
                 </div>
             </div>
         </section>
@@ -90,26 +102,206 @@
         <!-- Portfolio Content -->
         <div class="portfolio-content">
             <div class="portfolio-box">
-                <img src="imgs/univesity_project.PNG" alt="" class="portfolio-img">
+                <img src="imgs/cara_website.PNG" alt="" class="portfolio-img">
                 <!-- Overlay -->
                 <div class="portfolio-overlay">
-                    <h2>University Website</h2>
-                    <a href="#">
+                    <h2>Cara<br>Ecommerce Website</h2>
+                    <a href="https://github.com/Zakariaeabassioff/Cara-EcomWebSite">
                         <i class='bx bx-link-alt'></i>
                     </a>
                 </div>
             </div>
 
             <div class="portfolio-box">
-                <img src="imgs/company_homepage.PNG" alt="" class="portfolio-img">
+                <img src="imgs/jammming.PNG" alt="" class="portfolio-img">
                     <!-- Overlay -->
                 <div class="portfolio-overlay">
-                    <h2>Company Homepage</h2>
-                    <a href="#">
+                    <h2>Jammming <br> React WebApp</h2>
+                    <a href="https://github.com/Zakariaeabassioff/ReactApp---Jammming">
                         <i class='bx bx-link-alt'></i>
                     </a>
                 </div>
             </div>
+
+            <div class="portfolio-box">
+                <img src="imgs/Js.png" alt="" class="portfolio-img">
+                <!-- Overlay -->
+                <div class="portfolio-overlay">
+                    <h2>15 <br> Js mini-projets</h2>
+                    <a href="https://github.com/Zakariaeabassioff/15-Javascript-Mini-projects">
+                        <i class='bx bx-link-alt'></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="imgs/React.png" alt="" class="portfolio-img">
+                <!-- Overlay -->
+                <div class="portfolio-overlay">
+                    <h2>React <br> mini-projets</h2>
+                    <a href="https://github.com/Zakariaeabassioff/react-projects">
+                        <i class='bx bx-link-alt'></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class=" container" id="certification">
+        <!-- Heading -->
+        <h2 class="heading">Certifications</h2>
+        <!-- Portfolio Content -->
+        <div class="certifications-content">
+            <article class="certification-box">
+                <div class="certification-title">
+                    <p>Front-End Engineer <strong>Pro</strong> Career Path</p>
+                    <button class="certification-btn">
+                        <span class="plus-icon">
+                            <i class="far fa-plus-square"></i>
+                        </span>
+                        <span class="minus-icon">
+                            <i class="far fa-minus-square"></i>
+                        </span>
+                    </button>
+                </div>
+                <div class="certification-info">
+                    <div class="org-info">
+                        <p class="org">Codecademy</p>
+                        <p class="date">En cours</p>
+                    </div>
+            
+                    <div class="org-link">
+                        <a href="https://www.codecademy.com/learn/paths/front-end-engineer-career-path"
+                            class="identifiant" target="_blank">Afficher l'identifiant<a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="certification-box">
+                <div class="certification-title">
+                    <p>Learn React Course</p>
+                    <button class="certification-btn">
+                        <span class="plus-icon">
+                            <i class="far fa-plus-square"></i>
+                        </span>
+                        <span class="minus-icon">
+                            <i class="far fa-minus-square"></i>
+                        </span>
+                    </button>
+                </div>
+                <div class="certification-info">
+                    <div class="org-info">
+                        <p class="org">Codecademy</p>
+                        <p class="date">Emise en août 2022</p>
+                    </div>
+                    
+                    <div class="org-link">
+                        <a href="https://www.codecademy.com/profiles/Zakariae_abassi/certificates/af00e5032d0a68cc84879983f5d8333b"
+                            class="identifiant"target="_blank">Afficher l'identifiant<a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="certification-box">
+                <div class="certification-title">
+                    <p>Learn Javascript Course</p>
+                    <button class="certification-btn">
+                        <span class="plus-icon">
+                            <i class="far fa-plus-square"></i>
+                        </span>
+                        <span class="minus-icon">
+                            <i class="far fa-minus-square"></i>
+                        </span>
+                    </button>
+                </div>
+                <div class="certification-info">
+                    <div class="org-info">
+                        <p class="org">Codecademy</p>
+                        <p class="date">Emise en juil. 2022</p>
+                    </div>
+            
+                    <div class="org-link">
+                        <a href="https://www.codecademy.com/profiles/Zakariae_abassi/certificates/705dcb15de0da4dd9d9fc4f3274b430e"
+                            class="identifiant" target="_blank">Afficher l'identifiant<a>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="certification-box">
+                <div class="certification-title">
+                    <p>Learn php Course</p>
+                    <button class="certification-btn">
+                        <span class="plus-icon">
+                            <i class="far fa-plus-square"></i>
+                        </span>
+                        <span class="minus-icon">
+                            <i class="far fa-minus-square"></i>
+                        </span>
+                    </button>
+                </div>
+                <div class="certification-info">
+                    <div class="org-info">
+                        <p class="org">Codecademy</p>
+                        <p class="date">Emise en juin 2022</p>
+                    </div>
+            
+                    <div class="org-link">
+                        <a href="https://www.codecademy.com/profiles/Zakariae_abassi/certificates/d24ce3aa4ed99ac04afffec4a78e2e44"
+                            class="identifiant" target="_blank">Afficher l'identifiant<a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="certification-box">
+                <div class="certification-title">
+                    <p>Learn css Course</p>
+                    <button class="certification-btn">
+                        <span class="plus-icon">
+                            <i class="far fa-plus-square"></i>
+                        </span>
+                        <span class="minus-icon">
+                            <i class="far fa-minus-square"></i>
+                        </span>
+                    </button>
+                </div>
+                <div class="certification-info">
+                    <div class="org-info">
+                        <p class="org">Codecademy</p>
+                        <p class="date">Emise en mai 2022</p>
+                    </div>
+            
+                    <div class="org-link">
+                        <a href="https://www.codecademy.com/profiles/Zakariae_abassi/certificates/9a5bb1fc45b4281af1fffec93b0aaf05"
+                            class="identifiant" target="_blank">Afficher l'identifiant<a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="certification-box">
+                <div class="certification-title">
+                    <p>responsive web design</p>
+                    <button class="certification-btn">
+                        <span class="plus-icon">
+                            <i class="far fa-plus-square"></i>
+                        </span>
+                        <span class="minus-icon">
+                            <i class="far fa-minus-square"></i>
+                        </span>
+                    </button>
+                </div>
+                <div class="certification-info">
+                    <div class="org-info">
+                        <p class="org">freeCodeCamp</p>
+                        <p class="date">Emise en spet. 2021</p>
+                    </div>
+            
+                    <div class="org-link">
+                        <a href="https://www.freecodecamp.org/certification/fccb85111a9-eac1-4c6a-9db9-b64c8e1ec14d/responsive-web-design"
+                            class="identifiant" target="_blank">Afficher l'identifiant<a>
+                    </div>
+                </div>
+            </article>
         </div>
     </section>
 
@@ -121,7 +313,7 @@
         <form action="" class="contact-form" id="contact">
             <input type="text" placeholder="Your Name" class="name" required>
             <input type="email" placeholder="Email address..." class="email" required>
-            <textarea cols="30" rows="10" placeholder="Write message here.." class="message" required></textarea>
+            <textarea cols="30" rows="10" placeholder="Write message here.." class="message" required style="resize: none;"></textarea>
             <input type="submit" value="Send" class="send-btn">
         </form>
     </section>
@@ -130,9 +322,9 @@
     <section class="footer container" id="footer">
         <div class="social">
             <a href="mailto:zakariae.abassioff@gmail.com"><i class='bx bx-envelope'></i></a>
-            <a href="#"><i class='bx bxl-github'></i></a>
-            <a href="#"><i class='bx bxl-linkedin-square'></i></a>
-            <a href="#"><i class='bx bxl-codepen'></i></a>
+            <a href="https://github.com/Zakariaeabassioff"><i class='bx bxl-github'></i></a>
+            <a href="https://www.linkedin.com/in/zakariae-abassi-314154219/"><i class='bx bxl-linkedin-square'></i></a>
+            <a href="https://codepen.io/Abassioff"><i class='bx bxl-codepen'></i></a>
         </div>
         <!-- Footer Links -->
         <div class="footer-links">
@@ -153,6 +345,7 @@
             emailjs.init("0unyJ942B5DTDJEDP");
         })();
     </script>
+    
 
 
     <!-- Link to JS -->

@@ -237,10 +237,6 @@ header {
     transition: 0.3s all linear;
 }
 
-.home-text .color{
-    color: var(--main-color);
-}
-
 
 /* Section Headings */
 
@@ -268,7 +264,7 @@ header {
 }
 
 .about-data h2{
-    font-size: 2rem;
+    font-size: 2rem !important;
     line-height: 2.6rem;
     font-weight: 700;
     margin: 1rem 0;
@@ -299,7 +295,17 @@ header {
     font-size: 0.938rem;
     letter-spacing: 1px;
     text-align: justify;
-    margin-bottom: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.about-text p{
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    letter-spacing: 0.12rem;
+}
+
+.about-text .color {
+    color: var(--main-color);
 }
 
 /* Portfolio Styles */ 
@@ -339,9 +345,10 @@ header {
 }
 
 .portfolio-overlay h2{
-    font-size: 1.6rem;
+    font-size: 1.8rem !important;
     font-weight: 600;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .portfolio-overlay .bx{
@@ -361,6 +368,104 @@ header {
     top: 0;
     transition: 0.3s all ease;
 }
+
+/* Certifications Styles */
+.container h2{
+    font-size: 2.8rem;
+}
+
+.certifications-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.certification-box {
+    width: 100%;
+    border-radius: 1rem;
+    border: 2px solid var(--main-color);
+    padding: 5px 10px;
+    margin-bottom: 20px;
+}
+
+.certification-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    padding: 10px 20px;
+}
+
+.certification-btn{
+    font-size: 1.7rem;
+    background: transparent;
+    border-color: transparent;
+    color: #fff;
+    color: var(--bg-color);
+}
+
+.certification-btn span i{
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.certification-btn span i:hover{
+    transform: rotate(180deg);
+    color: var(--main-color);
+}
+
+.certification-info{
+    margin-top: 20px;
+    padding: 10px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.certification-info .org-info{
+    text-align: center;
+}
+
+.certification-info .org-link{
+    margin: 0 auto;
+}
+
+.certification-info .org{
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
+.certification-info .identifiant{
+    color: #fff;
+    border: 1px solid var(--main-color);
+    border-radius: 10px;
+    padding: 10px 20px;
+    transition: 0.3s;
+}
+
+.certification-info .identifiant:hover{
+    background-color: var(--main-color);
+}
+
+/* Hide Text */
+
+.certification-info{
+    display: none;
+}
+
+.show-info .certification-info{
+    display: grid;
+}
+
+.minus-icon{
+    display: none;
+}
+
+.show-info .minus-icon{
+    display: inline;
+}
+
+.show-info .plus-icon{
+    display: none;
+}
+
 
 /* Contact Styles */
 .contact-form{
@@ -451,11 +556,62 @@ header {
     transition: 0.3s;
 }
 
+/* Pop up */
+.popup {
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 10px auto;
+    transition: 0.3s;
+    display: none;
+    z-index: 200;
+}
+
+.contentBox {
+    position: relative;
+    width: 50vw;
+    background: #fff;
+    border-radius: 10px;
+    text-align: center;
+    color: #000;
+    padding: 10px 30px;
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+.close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
 /* Responsive */
 @media(max-width: 990px){
     .container{
         width: 90%;
         margin: 0 auto;
+    }
+
+    .certification-info{
+        place-items: center;
+    }
+
+    .certification-info .identifiant{
+        font-size: 0.8rem;
+        padding: 5px 10px;
+    }
+
+    .popup {
+        top: 100px;
+    }
+    
+    .contentBox {
+        position: relative;
+        width: 80vw;
+        padding: 10px 30px;
     }
 }
 
@@ -476,6 +632,15 @@ header {
         height: 257px;
     }
     
+    .popup {
+        top: 100px;
+    }
+    
+    .contentBox {
+        position: relative;
+        width: 80vw;
+        padding: 10px 30px;
+    }
 }
 
 @media(max-width: 775px){
@@ -600,6 +765,17 @@ header {
         flex-direction: column;
         row-gap: 1rem;
     }
+
+    .popup {
+        top: 140px;
+    }
+    
+    .contentBox {
+        position: relative;
+        width: 80vw;
+        padding: 10px 30px;
+    }
+
 }
 
 @media(max-width: 325px){
@@ -611,3 +787,5 @@ header {
         height: 190px;
     }
 }
+
+
